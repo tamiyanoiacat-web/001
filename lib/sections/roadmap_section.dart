@@ -10,9 +10,9 @@ class RoadmapSection extends StatelessWidget {
       'num': '01',
       'title': 'PHASE 01\nTHE BEGINNING',
       'subtitle': 'Foundation',
-      'goal': '🐭 Goal: Create the foundation.',
+      'goal': '🐱 Goal: Create the foundation.',
       'items': [
-        'DEGOPLAY brand creation',
+        'TAMIYANOIA Cat brand creation',
         'Website launch',
         'Community channels & presence',
         'Token development & deployment',
@@ -39,10 +39,10 @@ class RoadmapSection extends StatelessWidget {
     {
       'num': '03',
       'title': 'PHASE 03\nECOSYSTEM',
-      'subtitle': 'Build the DEGOPLAY World',
+      'subtitle': 'Build the TAMIYANOIA World',
       'goal': '🚀 Goal: Give the community something to use.',
       'items': [
-        'DEGOPLAY ecosystem portal',
+        'TAMIYANOIA ecosystem portal',
         'Community dashboard',
         'Token utility features',
         'Digital collectibles & NFTs',
@@ -55,14 +55,14 @@ class RoadmapSection extends StatelessWidget {
       'num': '04',
       'title': 'PHASE 04\nEXPANSION',
       'subtitle': 'Africa → Global',
-      'goal': '🌎 Goal: Take DEGOPLAY into a global Web3 brand.',
+      'goal': '🌎 Goal: Take TAMIYANOIA into a global Web3 brand.',
       'items': [
         'International community expansion',
         'Major ecosystem partnerships',
         'Additional blockchain integrations',
         'Developer & community grants',
         'Global campaigns & initiatives',
-        'New DEGOPLAY products',
+        'New TAMIYANOIA products',
       ],
       'active': false,
     },
@@ -194,7 +194,7 @@ class _PhaseCardState extends State<_PhaseCard> {
                   style: GoogleFonts.inter(
                     fontSize: 28,
                     fontWeight: FontWeight.w900,
-                    color: isActive ? kPurple : Colors.black26,
+                    color: isActive ? kPurple : kTextSubtle.withOpacity(0.5),
                   ),
                 ),
                 if (isActive)
@@ -251,7 +251,7 @@ class _PhaseCardState extends State<_PhaseCard> {
                   children: [
                     Text(
                       '• ',
-                      style: TextStyle(color: isActive ? kPurple : Colors.black38),
+                      style: TextStyle(color: isActive ? kPurple : kTextSubtle),
                     ),
                     Expanded(
                       child: Text(

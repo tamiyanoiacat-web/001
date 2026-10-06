@@ -67,21 +67,21 @@ class _NavBarState extends State<NavBar> {
                 // Social icons
                 _SocialIconBtn(
                   asset: 'assets/images/telegram.png',
-                  onTap: () => openUrl('https://t.co/GMgJniaUhy'),
+                  onTap: () => openUrl('https://t.me/+nzaN5SIwVJ85ZDNk'),
                 ),
                 const SizedBox(width: 4),
                 _SocialIconBtn(
                   asset: 'assets/images/x.png',
-                  onTap: () => openUrl('https://x.com/DegoPlaay'),
+                  onTap: () => openUrl('https://x.com/tamiyanoia_cat'),
                 ),
                 const SizedBox(width: 4),
                 _SocialIconBtn(
                   asset: 'assets/images/whatsapp.png',
-                  onTap: () => openUrl('https://t.co/GMgJniaUhy'),
+                  onTap: () => openUrl('https://chat.whatsapp.com/FRlUTAedPG942rXgU31JbT'),
                 ),
                 const SizedBox(width: 16),
               ],
-              // Join Community / Buy $DEGO
+              // Join Community / Buy $TAMIYANOIA
               _NavActionButtons(),
             ],
           ),
@@ -102,7 +102,7 @@ class _BrandLogo extends StatelessWidget {
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: Image.asset(
-          'assets/images/dana3.png',
+          'assets/images/t.png',
           height: 44,
           fit: BoxFit.contain,
         ),
@@ -203,7 +203,7 @@ class _NavActionButtonsState extends State<_NavActionButtons> {
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
       child: GestureDetector(
-        onTap: () => openUrl('https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
+        onTap: () => openUrl('https://dexscreener.com/bsc/0x8bea530150675c1eC537Bde45c0480164590c898'),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 180),
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
@@ -222,7 +222,7 @@ class _NavActionButtonsState extends State<_NavActionButtons> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Buy \$DEGO',
+                'Buy \$TAMIYANOIA',
                 style: GoogleFonts.inter(
                   fontSize: 13,
                   fontWeight: FontWeight.w800,

@@ -32,12 +32,12 @@ class CtaSection extends StatelessWidget {
               ? Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Mascot
+                    // Mascot on the left
                     SizedBox(
-                      width: 280,
-                      height: 180,
+                      width: 270,
+                      height: 250,
                       child: Image.asset(
-                        'assets/images/dana5.png',
+                        'assets/images/afr7.png',
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -48,7 +48,7 @@ class CtaSection extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'DEGOPLAY FAM 🐭',
+                            'TAMIYANOIA FAM 🐱',
                             style: GoogleFonts.inter(
                               fontSize: 34,
                               fontWeight: FontWeight.w900,
@@ -59,7 +59,7 @@ class CtaSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'DEGOPLAY belongs to its community.\nOur community brings together creators, developers, traders, artists, Web3 enthusiasts, builders, and people simply interested in being part of something new.',
+                            'TAMIYANOIA Cat belongs to its community.\nOur community brings together creators, developers, traders, artists, Web3 enthusiasts, builders, and people simply interested in being part of something new.',
                             style: GoogleFonts.inter(
                               fontSize: 15,
                               color: Colors.white.withOpacity(0.9),
@@ -69,28 +69,20 @@ class CtaSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 24),
                           _CtaBtn(
-                            onTap: () => openUrl('https://x.com/DegoPlaay'),
+                            onTap: () => openUrl('https://x.com/tamiyanoia_cat'),
                           ),
                         ],
                       ),
                     ),
                     const Spacer(),
-                    // Right badges
-                    Column(
-                      children: [
-                        Image.asset(
-                          'assets/images/meat.png',
-                          width: 70,
-                          height: 70,
-                          fit: BoxFit.contain,
-                        ),
-                        const SizedBox(height: 12),
-                        Image.asset(
-                          'assets/images/danafam.png',
-                          height: 60,
-                          fit: BoxFit.contain,
-                        ),
-                      ],
+                    // Right mascot
+                    SizedBox(
+                      width: 240,
+                      height: 260,
+                      child: Image.asset(
+                        'assets/images/afr6.png',
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   ],
                 )
@@ -98,15 +90,15 @@ class CtaSection extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: 240,
-                      height: 140,
+                      height: 220,
                       child: Image.asset(
-                        'assets/images/dana5.png',
+                        'assets/images/afr7.png',
                         fit: BoxFit.contain,
                       ),
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'DEGOPLAY FAM 🐭',
+                      'TAMIYANOIA FAM 🐱',
                       style: GoogleFonts.inter(
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
@@ -116,7 +108,7 @@ class CtaSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'DEGOPLAY belongs to its community.\nOur community brings together creators, developers, traders, artists, Web3 enthusiasts, and builders.',
+                      'TAMIYANOIA Cat belongs to its community.\nOur community brings together creators, developers, traders, artists, Web3 enthusiasts, and builders.',
                       style: GoogleFonts.inter(
                         fontSize: 14,
                         color: Colors.white.withOpacity(0.9),
@@ -126,13 +118,7 @@ class CtaSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     _CtaBtn(
-                      onTap: () => openUrl('https://x.com/DegoPlaay'),
-                    ),
-                    const SizedBox(height: 20),
-                    Image.asset(
-                      'assets/images/danafam.png',
-                      height: 50,
-                      fit: BoxFit.contain,
+                      onTap: () => openUrl('https://x.com/tamiyanoia_cat'),
                     ),
                   ],
                 ),
@@ -309,11 +295,11 @@ class _CtaBtnState extends State<_CtaBtn> {
               ),
               const SizedBox(width: 10),
               Text(
-                'Join DEGOPLAY FAM  →',
+                'Join TAMIYANOIA FAM  →',
                 style: GoogleFonts.inter(
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
-                  color: kPurpleDark,
+                  color: kBlueDeep,
                 ),
               ),
             ],

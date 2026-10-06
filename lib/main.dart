@@ -20,15 +20,15 @@ class DanaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DEGOPLAY — From Africa to the World. 🌍🐭',
+      title: 'TAMIYANOIA CAT — From Africa to the World. 🌍🐱',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
-        colorScheme: ColorScheme.light(
+        brightness: Brightness.dark,
+        colorScheme: const ColorScheme.dark(
           primary: kPurple,
-          surface: kWhite,
+          surface: kCardBg,
         ),
-        textTheme: GoogleFonts.interTextTheme(ThemeData.light().textTheme),
+        textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
         scaffoldBackgroundColor: kWhite,
       ),
       home: const DanaHomePage(),
@@ -49,7 +49,7 @@ class _DanaHomePageState extends State<DanaHomePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    precacheImage(const AssetImage('assets/images/fa.png'), context);
+    precacheImage(const AssetImage('assets/images/t.png'), context);
     precacheImage(const AssetImage('assets/images/dana_coin.jpg'), context);
     precacheImage(const AssetImage('assets/images/face.png'), context);
     precacheImage(const AssetImage('assets/images/bnb.png'), context);

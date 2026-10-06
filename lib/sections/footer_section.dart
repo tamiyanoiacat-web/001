@@ -87,7 +87,7 @@ class FooterSection extends StatelessWidget {
               border: Border.all(color: kBorderColor),
             ),
             child: Text(
-              'Disclaimer: DEGOPLAY is a community and technology project. Nothing on this website should be interpreted as financial advice, an investment offer, or a promise of financial returns. Digital assets can be volatile and may involve significant risk. Always conduct your own research (DYOR).',
+              'Disclaimer: TAMIYANOIA Cat is a community and technology project. Nothing on this website should be interpreted as financial advice, an investment offer, or a promise of financial returns. Digital assets can be volatile and may involve significant risk. Always conduct your own research (DYOR).',
               style: GoogleFonts.inter(
                 fontSize: 12,
                 color: kTextMuted,
@@ -105,13 +105,13 @@ class FooterSection extends StatelessWidget {
             runSpacing: 10,
             children: [
               Text(
-                '© 2025 DEGOPLAY. All rights reserved.',
+                '© 2025 TAMIYANOIA CAT. All rights reserved.',
                 style: GoogleFonts.inter(fontSize: 12, color: kTextMuted),
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('🐭 ', style: TextStyle(fontSize: 12)),
+                  const Text('🐱 ', style: TextStyle(fontSize: 12)),
                   Text(
                     'One Community. One Ecosystem. One Journey.',
                     style: GoogleFonts.inter(
@@ -137,12 +137,12 @@ class _TeamSection extends StatelessWidget {
   static const _roles = [
     {
       'role': 'Founder & Project Lead',
-      'desc': 'Building the DEGOPLAY vision and coordinating the ecosystem.',
+      'desc': 'Building the TAMIYANOIA Cat vision and coordinating the ecosystem.',
       'icon': '👑',
     },
     {
       'role': 'Community Lead',
-      'desc': 'Guiding the DEGOPLAY FAM, contributor programs, and community events.',
+      'desc': 'Guiding the TAMIYANOIA FAM, contributor programs, and community events.',
       'icon': '👥',
     },
     {
@@ -166,7 +166,7 @@ class _TeamSection extends StatelessWidget {
           children: [
             const Text('👥 ', style: TextStyle(fontSize: 22)),
             Text(
-              'The People Behind DEGOPLAY',
+              'The People Behind TAMIYANOIA Cat',
               style: GoogleFonts.inter(
                 fontSize: 24,
                 fontWeight: FontWeight.w800,
@@ -177,7 +177,7 @@ class _TeamSection extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'DEGOPLAY is currently operated by an independent core team and community contributors. Team information and contributor rosters will continue to be published as the project develops.',
+          'TAMIYANOIA Cat is currently operated by an independent core team and community contributors. Team information and contributor rosters will continue to be published as the project develops.',
           style: GoogleFonts.inter(fontSize: 14, color: kTextMuted, height: 1.6),
         ),
         const SizedBox(height: 24),
@@ -315,24 +315,24 @@ class _TransparencySection extends StatelessWidget {
             runSpacing: 12,
             children: [
               _VerifyBadge(
-                label: 'BSC Wallet: 0x04f0...485D',
+                label: 'BSC Wallet: 0x8bea...c898',
                 icon: '💼',
-                onTap: () => openUrl('https://bscscan.com/address/0x04f0a170F95Bf48f3DA756ab9684068CcDa6485D'),
+                onTap: () => openUrl('https://bscscan.com/token/0x8bea530150675c1eC537Bde45c0480164590c898'),
               ),
               _VerifyBadge(
                 label: 'BscScan Verified',
                 icon: '⛓️',
-                onTap: () => openUrl('https://bscscan.com/address/0x04f0a170F95Bf48f3DA756ab9684068CcDa6485D'),
+                onTap: () => openUrl('https://bscscan.com/token/0x8bea530150675c1eC537Bde45c0480164590c898'),
               ),
               _VerifyBadge(
                 label: 'DexScreener Live',
                 icon: '📊',
-                onTap: () => openUrl('https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
+                onTap: () => openUrl('https://dexscreener.com/bsc/0x8bea530150675c1eC537Bde45c0480164590c898'),
               ),
               _VerifyBadge(
                 label: 'PancakeSwap Pool',
                 icon: '🥞',
-                onTap: () => openUrl('https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
+                onTap: () => openUrl('https://pancakeswap.finance/swap?outputCurrency=0x8bea530150675c1eC537Bde45c0480164590c898'),
               ),
             ],
           ),
@@ -408,16 +408,16 @@ class _FaqSection extends StatelessWidget {
 
   static const _faqs = [
     {
-      'q': 'What is DEGOPLAY?',
-      'a': 'DEGOPLAY is a community-focused Web3 ecosystem combining blockchain, digital culture, entertainment, and decentralized community participation.',
+      'q': 'What is TAMIYANOIA Cat?',
+      'a': 'TAMIYANOIA Cat is a community-focused Web3 ecosystem combining blockchain, digital culture, entertainment, and decentralized community participation.',
     },
     {
-      'q': 'What is \$DEGO?',
-      'a': '\$DEGO is the native utility token of the DEGOPLAY ecosystem, designed to support real ecosystem participation rather than relying solely on speculation.',
+      'q': 'What is \$TAMIYANOIA?',
+      'a': '\$TAMIYANOIA is the native utility token of the TAMIYANOIA Cat ecosystem, designed to support real ecosystem participation rather than relying solely on speculation.',
     },
     {
-      'q': 'What blockchain is DEGOPLAY on?',
-      'a': 'DEGOPLAY operates on BNB Chain (BEP-20) offering fast transaction speeds and ultra-low gas fees for our global community.',
+      'q': 'What blockchain is TAMIYANOIA on?',
+      'a': 'TAMIYANOIA operates on BNB Chain (BEP-20) offering fast transaction speeds and ultra-low gas fees for our global community.',
     },
     {
       'q': 'What is the total supply?',
@@ -425,11 +425,11 @@ class _FaqSection extends StatelessWidget {
     },
     {
       'q': 'Where can I find the contract?',
-      'a': 'The official contract address is 0x04f0a170F95Bf48f3DA756ab9684068CcDa6485D on BNB Chain. Always verify the address from official channels.',
+      'a': 'The official contract address is 0x8bea530150675c1eC537Bde45c0480164590c898 on BNB Chain. Always verify the address from official channels.',
     },
     {
-      'q': 'Is DEGOPLAY only for Africa?',
-      'a': 'No. DEGOPLAY has African roots and heritage, but is built for a global Web3 community connecting people everywhere.',
+      'q': 'Is TAMIYANOIA only for Africa?',
+      'a': 'No. TAMIYANOIA Cat has African roots and heritage, but is built for a global Web3 community connecting people everywhere.',
     },
     {
       'q': 'How can I join?',
@@ -568,7 +568,7 @@ class _FooterBrand extends StatelessWidget {
           child: MouseRegion(
             cursor: SystemMouseCursors.click,
             child: Image.asset(
-              'assets/images/dana3.png',
+              'assets/images/t.png',
               height: 48,
               fit: BoxFit.contain,
             ),
@@ -636,17 +636,17 @@ class _FooterSocials extends StatelessWidget {
         _SocialIconChip(
           icon: 'assets/images/whatsapp.png',
           label: 'WhatsApp',
-          onTap: () => openUrl('https://t.co/GMgJniaUhy'),
+          onTap: () => openUrl('https://chat.whatsapp.com/FRlUTAedPG942rXgU31JbT'),
         ),
         _SocialIconChip(
           icon: 'assets/images/telegram.png',
           label: 'Telegram',
-          onTap: () => openUrl('https://t.co/GMgJniaUhy'),
+          onTap: () => openUrl('https://t.me/+nzaN5SIwVJ85ZDNk'),
         ),
         _SocialIconChip(
           icon: 'assets/images/x.png',
           label: 'X (Twitter)',
-          onTap: () => openUrl('https://x.com/DegoPlaay'),
+          onTap: () => openUrl('https://x.com/tamiyanoia_cat'),
         ),
       ],
     );

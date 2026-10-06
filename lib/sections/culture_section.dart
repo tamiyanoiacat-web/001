@@ -7,43 +7,43 @@ class CultureSection extends StatelessWidget {
 
   static const _layers = [
     {
-      'icon': '🐭',
-      'title': 'DEGOPLAY',
+      'icon': '🐱',
+      'title': 'TAMIYANOIA CAT',
       'badge': 'CORE',
       'desc': 'The central brand and community uniting players, creators, and believers worldwide.',
-      'color': 0xFF7C3AED,
+      'color': 0xFF0084FF,
     },
     {
       'icon': '🪙',
-      'title': '\$DEGO',
+      'title': '\$TAMIYANOIA',
       'badge': 'TOKEN',
       'desc': 'The native ecosystem token powering access, rewards, and on-chain participation.',
-      'color': 0xFF9333EA,
+      'color': 0xFF00E5FF,
     },
     {
       'icon': '👥',
-      'title': 'DEGOPLAY FAM',
+      'title': 'TAMIYANOIA FAM',
       'badge': 'COMMUNITY',
       'desc': 'Our passionate global community bringing together creators, builders, traders, and enthusiasts.',
       'color': 0xFF0284C7,
     },
     {
       'icon': '🎨',
-      'title': 'DEGOPLAY CREATIVE',
+      'title': 'TAMIYANOIA CREATIVE',
       'badge': 'CULTURE',
       'desc': 'Community art, memes, character lore, interactive media, and digital culture.',
-      'color': 0xFFC026D3,
+      'color': 0xFF38BDF8,
     },
     {
       'icon': '🛠️',
-      'title': 'DEGOPLAY LABS',
+      'title': 'TAMIYANOIA LABS',
       'badge': 'PRODUCTS',
       'desc': 'Future decentralized products, games, utility tools, and Web3 experiments.',
       'color': 0xFF059669,
     },
     {
       'icon': '🌍',
-      'title': 'DEGOPLAY AFRICA',
+      'title': 'TAMIYANOIA AFRICA',
       'badge': 'INITIATIVE',
       'desc': 'Community initiatives connecting African builders and local Web3 hubs with the wider world.',
       'color': 0xFFEA580C,
@@ -76,12 +76,12 @@ class CultureSection extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'The DEGOPLAY Ecosystem',
+                      'The TAMIYANOIA Cat Ecosystem',
                       style: headingStyle(size: 36),
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'DEGOPLAY is designed to grow in layers — starting with strong community culture and expanding into digital experiences, products, and global initiatives.',
+                      'TAMIYANOIA Cat is designed to grow in layers — starting with strong community culture and expanding into digital experiences, products, and global initiatives.',
                       style: GoogleFonts.inter(
                         fontSize: 15,
                         color: kTextMuted,

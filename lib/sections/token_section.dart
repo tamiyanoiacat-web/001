@@ -60,7 +60,7 @@ class TokenSection extends StatelessWidget {
 
 class _TokenLeft extends StatelessWidget {
   const _TokenLeft();
-  static const _contractAddress = '0x04f0a170F95Bf48f3DA756ab9684068CcDa6485D';
+  static const _contractAddress = '0x8bea530150675c1eC537Bde45c0480164590c898';
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class _TokenLeft extends StatelessWidget {
         _TokenHeaderLogo(contractAddress: _contractAddress),
         const SizedBox(height: 16),
         Text(
-          '\$DEGO is the native community token of the DEGOPLAY ecosystem.\nThe token is designed to support participation within the ecosystem rather than relying solely on speculation.',
+          '\$TAMIYANOIA is the native community token of the TAMIYANOIA Cat ecosystem.\nThe token is designed to support participation within the ecosystem rather than relying solely on speculation.',
           style: GoogleFonts.inter(
             fontSize: 15,
             color: kTextMuted,
@@ -83,7 +83,7 @@ class _TokenLeft extends StatelessWidget {
 
         _TokenRow(
           icon: '💼',
-          label: 'BSC Wallet / Contract',
+          label: 'Token Contract (CA)',
           value: '${_contractAddress.substring(0, 10)}...${_contractAddress.substring(_contractAddress.length - 6)}',
           isAddress: true,
           fullText: _contractAddress,
@@ -141,29 +141,76 @@ class _TokenHeaderLogoState extends State<_TokenHeaderLogo> {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _hovered = true),
-      onExit: (_) => setState(() => _hovered = false),
-      child: GestureDetector(
-        onTap: _copy,
-        child: AnimatedScale(
-          scale: _hovered ? 1.03 : 1.0,
-          duration: const Duration(milliseconds: 180),
-          alignment: Alignment.centerLeft,
-          child: Tooltip(
-            message: _copied ? 'Copied!' : 'Click to copy \$DEGO contract address',
-            child: SizedBox(
-              height: 70,
-              child: Image.asset(
-                'assets/images/open.png',
-                fit: BoxFit.contain,
-                alignment: Alignment.centerLeft,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 55,
+          child: Image.asset(
+            'assets/images/t.png',
+            fit: BoxFit.contain,
+            alignment: Alignment.centerLeft,
+          ),
+        ),
+        const SizedBox(height: 12),
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          onEnter: (_) => setState(() => _hovered = true),
+          onExit: (_) => setState(() => _hovered = false),
+          child: GestureDetector(
+            onTap: _copy,
+            child: AnimatedScale(
+              scale: _hovered ? 1.04 : 1.0,
+              duration: const Duration(milliseconds: 180),
+              alignment: Alignment.centerLeft,
+              child: Tooltip(
+                message: _copied ? 'Copied!' : 'Click to copy \$TAMIYANOIA contract address',
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SizedBox(
+                      height: 75,
+                      width: 75,
+                      child: Image.asset(
+                        'assets/images/dego.png',
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                    const SizedBox(width: 14),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: kPurpleSoft,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: kPurple.withOpacity(0.3)),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            _copied ? Icons.check_circle : Icons.copy,
+                            size: 14,
+                            color: kPurpleDark,
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            _copied ? 'Copied!' : 'Copy Contract',
+                            style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w700,
+                              color: kPurpleDark,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
         ),
-      ),
+      ],
     );
   }
 }
@@ -235,9 +282,9 @@ class _DexRow extends StatelessWidget {
           spacing: 10,
           runSpacing: 8,
           children: const [
-            _DexChip('PancakeSwap', '🥞', url: 'https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
-            _DexChip('DexScreener', '📈', url: 'https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
-            _DexChip('BscScan', '⛓️', url: 'https://bscscan.com/address/0x04f0a170F95Bf48f3DA756ab9684068CcDa6485D'),
+            _DexChip('DexScreener', '📈', url: 'https://dexscreener.com/bsc/0x8bea530150675c1eC537Bde45c0480164590c898'),
+            _DexChip('PancakeSwap', '🥞', url: 'https://pancakeswap.finance/swap?outputCurrency=0x8bea530150675c1eC537Bde45c0480164590c898'),
+            _DexChip('BscScan', '⛓️', url: 'https://bscscan.com/token/0x8bea530150675c1eC537Bde45c0480164590c898'),
           ],
         ),
       ],
@@ -347,27 +394,42 @@ class _CoinRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // glow
-        Container(
-          width: 380,
-          height: 220,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(110),
-            gradient: RadialGradient(
-              colors: [
-                kPurple.withOpacity(0.18),
-                Colors.transparent,
-              ],
+        Stack(
+          alignment: Alignment.center,
+          children: [
+            // glow
+            Container(
+              width: 320,
+              height: 320,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [
+                    kPurple.withOpacity(0.25),
+                    Colors.transparent,
+                  ],
+                ),
+              ),
             ),
-          ),
+            SizedBox(
+              width: 280,
+              height: 280,
+              child: Image.asset(
+                'assets/images/dego.png',
+                fit: BoxFit.contain,
+              ),
+            ),
+          ],
         ),
-        SizedBox(
-          width: 440,
+        const SizedBox(height: 16),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxHeight: 340),
           child: Image.asset(
-            'assets/images/close.png',
+            'assets/images/ff.png',
             fit: BoxFit.contain,
           ),
         ),
@@ -399,12 +461,12 @@ class _TokenUtilitySection extends StatelessWidget {
     {
       'icon': '🎮',
       'title': 'Digital Experiences',
-      'desc': 'Future DEGOPLAY games, products, and decentralized tools may integrate \$DEGO directly.',
+      'desc': 'Future TAMIYANOIA Cat games, products, and decentralized tools may integrate \$TAMIYANOIA directly.',
     },
     {
       'icon': '🤝',
       'title': 'Partnerships',
-      'desc': 'Selected ecosystem partners may integrate \$DEGO into community campaigns and experiences.',
+      'desc': 'Selected ecosystem partners may integrate \$TAMIYANOIA into community campaigns and experiences.',
     },
   ];
 
@@ -529,13 +591,13 @@ class _TokenomicsSection extends StatelessWidget {
   const _TokenomicsSection({required this.isWide});
 
   static const _allocations = [
-    {'name': 'Community', 'pct': '30%', 'purpose': 'Community initiatives & rewards', 'color': 0xFF7C3AED},
+    {'name': 'Community', 'pct': '30%', 'purpose': 'Community initiatives & rewards', 'color': 0xFF0084FF},
     {'name': 'Liquidity', 'pct': '20%', 'purpose': 'Initial & future liquidity', 'color': 0xFF0284C7},
-    {'name': 'Ecosystem', 'pct': '20%', 'purpose': 'Products & development', 'color': 0xFF059669},
-    {'name': 'Marketing', 'pct': '10%', 'purpose': 'Global awareness & campaigns', 'color': 0xFFC026D3},
-    {'name': 'Treasury', 'pct': '10%', 'purpose': 'Long-term ecosystem reserve', 'color': 0xFF9333EA},
-    {'name': 'Team', 'pct': '5%', 'purpose': 'Core contributors (vested)', 'color': 0xFFDC2626},
-    {'name': 'Partnerships', 'pct': '5%', 'purpose': 'Strategic ecosystem growth', 'color': 0xFF6366F1},
+    {'name': 'Ecosystem', 'pct': '20%', 'purpose': 'Products & development', 'color': 0xFF00E5FF},
+    {'name': 'Marketing', 'pct': '10%', 'purpose': 'Global awareness & campaigns', 'color': 0xFF38BDF8},
+    {'name': 'Treasury', 'pct': '10%', 'purpose': 'Long-term ecosystem reserve', 'color': 0xFF0052CC},
+    {'name': 'Team', 'pct': '5%', 'purpose': 'Core contributors (vested)', 'color': 0xFFEF4444},
+    {'name': 'Partnerships', 'pct': '5%', 'purpose': 'Strategic ecosystem growth', 'color': 0xFF60A5FA},
   ];
 
   @override

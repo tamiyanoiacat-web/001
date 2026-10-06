@@ -7,6 +7,7 @@ const projectRoot = 'C:\\Users\\Allen\\.gemini\\antigravity-ide\\scratch\\dana_w
 const degoSrc = path.join(downloads, 'dego.png');
 const fqSrc = path.join(downloads, 'fq.png');
 const faSrc = path.join(downloads, 'fa.png');
+const tSrc = path.join(downloads, 't.png');
 const fbSrc = path.join(downloads, 'fb.png');
 const fcSrc = path.join(downloads, 'fc.png');
 const fdSrc = path.join(downloads, 'fd.png');
@@ -85,6 +86,11 @@ const targets = [
   { src: doseUpSrc, dest: path.join(projectRoot, 'assets', 'images', 'dose_up.png') },
   { src: doseUpSrc, dest: path.join(projectRoot, 'build', 'web', 'assets', 'assets', 'images', 'dose_up.png') },
   { src: doseUpSrc, dest: path.join(projectRoot, 'build', 'web', 'assets', 'images', 'dose_up.png') },
+
+  // t.png -> t.png & fa.png (TAMIYANOIA Cat header and footer logo)
+  { src: tSrc, dest: path.join(projectRoot, 'assets', 'images', 't.png') },
+  { src: tSrc, dest: path.join(projectRoot, 'build', 'web', 'assets', 'assets', 'images', 't.png') },
+  { src: tSrc, dest: path.join(projectRoot, 'build', 'web', 'assets', 'images', 't.png') },
 ];
 
 for (const t of targets) {

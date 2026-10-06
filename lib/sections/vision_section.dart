@@ -44,15 +44,15 @@ class _AboutLeft extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        sectionLabel('ABOUT DEGOPLAY'),
+        sectionLabel('ABOUT TAMIYANOIA CAT'),
         yellowDivider(),
         Text(
-          'What is DEGOPLAY?',
+          'What is TAMIYANOIA Cat?',
           style: headingStyle(size: 36),
         ),
         const SizedBox(height: 20),
         Text(
-          'DEGOPLAY is a community-focused Web3 project created to bring people together around digital culture, entertainment, blockchain technology, and decentralized communities.',
+          'TAMIYANOIA Cat is a community-focused Web3 project created to bring people together around digital culture, entertainment, blockchain technology, and decentralized communities.',
           style: GoogleFonts.inter(
             fontSize: 15,
             color: kTextMuted,
@@ -61,7 +61,7 @@ class _AboutLeft extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         Text(
-          'The project aims to build more than a token. DEGOPLAY is designed as an ecosystem where community members can participate, create, connect, and contribute.',
+          'The project aims to build more than a token. TAMIYANOIA Cat is designed as an ecosystem where community members can participate, create, connect, and contribute.',
           style: GoogleFonts.inter(
             fontSize: 15,
             color: kTextMuted,
@@ -96,7 +96,7 @@ class _AboutLeft extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         Text(
-          'DEGOPLAY starts with community and gradually expands into products, partnerships, digital experiences, and other Web3 initiatives.',
+          'TAMIYANOIA Cat starts with community and gradually expands into products, partnerships, digital experiences, and other Web3 initiatives.',
           style: GoogleFonts.inter(
             fontSize: 14,
             color: kTextMuted,
@@ -182,22 +182,16 @@ class _AboutRight extends StatelessWidget {
 
           const SizedBox(height: 24),
 
-          // Visual Bottom: Mascot & Dose Up Badge
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: SizedBox(
-                  height: 180,
-                  child: Image.asset(
-                    'assets/images/ed.png',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 16),
-              _DoseUpBadge(),
-            ],
+          // Visual Bottom: Large Mascot
+          Container(
+            width: double.infinity,
+            height: 360,
+            alignment: Alignment.center,
+            child: Image.asset(
+              'assets/images/fd.png',
+              height: 360,
+              fit: BoxFit.contain,
+            ),
           ),
         ],
       ),
@@ -267,47 +261,3 @@ class _TagChip extends StatelessWidget {
   }
 }
 
-class _DoseUpBadge extends StatefulWidget {
-  @override
-  State<_DoseUpBadge> createState() => _DoseUpBadgeState();
-}
-
-class _DoseUpBadgeState extends State<_DoseUpBadge> {
-  bool _hovered = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _hovered = true),
-      onExit: (_) => setState(() => _hovered = false),
-      child: GestureDetector(
-        onTap: () => openUrl('https://dexscreener.com/bsc/0xad9684bc26780176fcb39b0d6749904a5dc2f3dc'),
-        child: AnimatedScale(
-          scale: _hovered ? 1.06 : 1.0,
-          duration: const Duration(milliseconds: 180),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: _hovered
-                  ? [
-                      BoxShadow(
-                        color: kYellow.withOpacity(0.4),
-                        blurRadius: 20,
-                        offset: const Offset(0, 6),
-                      ),
-                    ]
-                  : [],
-            ),
-            child: Image.asset(
-              'assets/images/dose_up.png',
-              width: 110,
-              height: 110,
-              fit: BoxFit.contain,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
