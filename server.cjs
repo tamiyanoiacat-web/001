@@ -130,5 +130,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`⚡ DANA Lightning-Fast Web Server running at http://localhost:${PORT}/`);
+  console.log(`⚡ TAMIYANOIA Cat Web Server running at http://localhost:${PORT}/`);
 });

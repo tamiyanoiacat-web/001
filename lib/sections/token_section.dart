@@ -172,7 +172,7 @@ class _TokenHeaderLogoState extends State<_TokenHeaderLogo> {
                       height: 75,
                       width: 75,
                       child: Image.asset(
-                        'assets/images/dego.png',
+                        'assets/images/face.png',
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -419,7 +419,7 @@ class _CoinRight extends StatelessWidget {
               width: 280,
               height: 280,
               child: Image.asset(
-                'assets/images/dego.png',
+                'assets/images/face.png',
                 fit: BoxFit.contain,
               ),
             ),

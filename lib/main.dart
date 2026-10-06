@@ -11,11 +11,11 @@ import 'sections/cta_section.dart';
 import 'sections/footer_section.dart';
 
 void main() {
-  runApp(const DanaApp());
+  runApp(const TamiyanoiaApp());
 }
 
-class DanaApp extends StatelessWidget {
-  const DanaApp({super.key});
+class TamiyanoiaApp extends StatelessWidget {
+  const TamiyanoiaApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,26 +31,25 @@ class DanaApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
         scaffoldBackgroundColor: kWhite,
       ),
-      home: const DanaHomePage(),
+      home: const TamiyanoiaHomePage(),
     );
   }
 }
 
-class DanaHomePage extends StatefulWidget {
-  const DanaHomePage({super.key});
+class TamiyanoiaHomePage extends StatefulWidget {
+  const TamiyanoiaHomePage({super.key});
 
   @override
-  State<DanaHomePage> createState() => _DanaHomePageState();
+  State<TamiyanoiaHomePage> createState() => _TamiyanoiaHomePageState();
 }
 
-class _DanaHomePageState extends State<DanaHomePage> {
+class _TamiyanoiaHomePageState extends State<TamiyanoiaHomePage> {
   final ScrollController _scrollController = ScrollController();
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     precacheImage(const AssetImage('assets/images/t.png'), context);
-    precacheImage(const AssetImage('assets/images/dana_coin.jpg'), context);
     precacheImage(const AssetImage('assets/images/face.png'), context);
     precacheImage(const AssetImage('assets/images/bnb.png'), context);
     precacheImage(const AssetImage('assets/images/x.png'), context);

@@ -16,12 +16,12 @@ void main() {
     GoogleFonts.config.allowRuntimeFetching = false;
   });
 
-  testWidgets('DanaApp renders successfully', (WidgetTester tester) async {
+  testWidgets('TamiyanoiaApp renders successfully', (WidgetTester tester) async {
     await tester.binding.setSurfaceSize(const Size(1280, 800));
-    await tester.pumpWidget(const DanaApp());
+    await tester.pumpWidget(const TamiyanoiaApp());
     await tester.pump(const Duration(milliseconds: 100));
 
-    expect(find.byType(DanaApp), findsOneWidget);
+    expect(find.byType(TamiyanoiaApp), findsOneWidget);
 
     // Unmount to dispose continuous animation controllers
     await tester.pumpWidget(const SizedBox());

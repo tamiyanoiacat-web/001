@@ -1,30 +1,28 @@
-# DANA Coin — A Dose of Crypto Culture 👑
+# TAMIYANOIA Cat — From Africa to the World. 🌍🐱
 
-Official responsive web application for **DANA Coin ($DANA)** on BNB Chain.
+Official responsive web application for **TAMIYANOIA Cat ($TAMIYANOIA)** on BNB Chain.
 
-![DANA Coin](assets/images/dana3.png)
+![TAMIYANOIA Cat](assets/images/t.png)
 
 ## 🪙 Token Information
-- **Token Name**: DANA Coin
-- **Ticker**: $DANA
+- **Token Name**: TAMIYANOIA Cat
+- **Ticker**: $TAMIYANOIA
 - **Network**: BNB Chain (BEP-20)
-- **Contract Address**: `0x6C4e9893C3EA05594e5cf26E7B813a07a2B564B0`
-- **DexScreener**: [DANA / WBNB on BSC](https://dexscreener.com/bsc/0xf471d46afdc6b29726d6e32e81b6ccc604f48129)
+- **Contract Address**: `0x8bea530150675c1eC537Bde45c0480164590c898`
+- **DexScreener**: [TAMIYANOIA / WBNB on BSC](https://dexscreener.com/bsc/0x8bea530150675c1eC537Bde45c0480164590c898)
 
 ## 🌐 Community & Links
-- **WhatsApp Channel**: [Solid Community - WhatsApp channel](https://www.whatsapp.com/channel/0029Vb8U9vT6hENyFyYDo61u)
-- **WhatsApp Group**: [DANA Community](https://chat.whatsapp.com/Gpd3q6d02FwIkFM1FOCf7W)
-- **X (Twitter)**: [@ardanadose](https://x.com/ardanadose)
-- **Telegram**: [@SCF_Degens](https://t.me/SCF_Degens)
+- **X (Twitter)**: [@OCITANoo](https://x.com/OCITANoo)
+- **Telegram**: [@tamiyanoiacat](https://t.me/tamiyanoiacat)
+- **WhatsApp**: [TAMIYANOIA CAT Channel](https://whatsapp.com/channel/0029Vb7wUj4EQIalUu7s1j3D)
 
 ## 🚀 Features & Sections
-- **Hero Section**: Floating 3D mascot, live BNB badge, quick CTAs to Buy $DANA and Join Community.
-- **Vision Section**: "A Dose of Pure Fun" & "What is DANA?" interactive cards.
-- **Culture Pillars**: Community, Memes, Creativity, and Participation showcase cards.
-- **Tokenomics Section**: One-click contract address clipboard copy, BNB Chain network info, DEX shortcuts (PancakeSwap & DexScreener), and dynamic 3D Gold Coin visual.
-- **Roadmap**: 4-phase milestone trajectory (Birth, Community, Growth, Global Dose).
-- **CTA Section**: High-contrast gold community banner.
-- **Footer**: Full navigation, brand links, and social chips.
+- **Hero Section**: Metallic TAMIYANOIA Cat emblem, live BNB badge, quick CTAs to Buy $TAMIYANOIA and Join Community.
+- **Vision & Mission**: African-born Web3 brand connecting communities globally.
+- **Why TAMIYANOIA Cat?**: Global community, strong cultural identity, transparent BNB Chain integration, and community-first development.
+- **Token Section**: One-click contract address clipboard copy, BNB Chain network info, and DexScreener quick links.
+- **Roadmap**: Multi-phase trajectory from community launch to global ecosystem expansion.
+- **Community CTA & Socials**: High-engagement community hub with live links to X, Telegram, and WhatsApp.
 
 ## 🛠️ Development & Build
 

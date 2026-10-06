@@ -82,8 +82,8 @@ class _HeroSectionState extends State<HeroSection>
 
             const SizedBox(height: 60),
 
-            // Why DEGOPLAY Feature Section
-            _WhyDegoplaySection(isWide: isWide),
+            // Why TAMIYANOIA Cat Feature Section
+            _WhyTamiyanoiaSection(isWide: isWide),
           ],
         ),
       ),
@@ -361,7 +361,7 @@ class _MascotImage extends StatelessWidget {
               ),
             ),
           ),
-          // DEGOPLAY Primary Mascot
+          // Primary Mascot
           Image.asset(
             'assets/images/grumpolia.png',
             fit: BoxFit.contain,
@@ -372,9 +372,9 @@ class _MascotImage extends StatelessWidget {
   }
 }
 
-class _WhyDegoplaySection extends StatelessWidget {
+class _WhyTamiyanoiaSection extends StatelessWidget {
   final bool isWide;
-  const _WhyDegoplaySection({required this.isWide});
+  const _WhyTamiyanoiaSection({required this.isWide});
 
   static const _features = [
     {
